@@ -75,7 +75,6 @@ function watchTask() {
 }
 
 // exports.default = copyHTML; this is for just one
-
 // with parallel we can send them all paralell to each other, we must export a function for it to work
 // exports.default = parallel(copyHTML, cssTask, jsTask, imageTask);
 // for the watch to work we need to do a series, so first we make the export a series then we do the parallel
