@@ -3,7 +3,7 @@ School assignment to learn git
 
 ## Assignment 2
 
-NodeJs and automatisation with Gulp
+NodeJs and automatisation with Gulp.
 
 ### Purpose
 
@@ -11,7 +11,9 @@ The purpose of this assigment is to learn the basics of gulp and using it to aut
 
 In this assigment I will use gulp with npm packages from https://www.npmjs.com/
 To merge and minimize CSS files, JS files, minimize pictures and automaticly transfer them and html files
-from a sourch map to a published map.
+from a sourch map to a published map. 
+
+Note: added /node_modules to gitignore, so they wont be uploded to the repo.
 
 ### Gulp - https://www.npmjs.com/package/gulp
 
