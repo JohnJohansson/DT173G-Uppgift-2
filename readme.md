@@ -17,19 +17,19 @@ from a sourch map to a published map.
 
 Will be used for this assigment, the gulp functions I will use is "src, dest, parallel, series, watch"
 
-    1.**src **
+    **src **
     This is for deciding our source map.
     
-    2.**dest **
+    **dest **
     This is for deciding our published map.
 
-    3.**parallel **
+    **parallel **
     This is so our files can be written and handled at the same time from the src map to the pub map.
 
-    4.**series **
+    **series **
     This is for queue more then one commands.
 
-    5.**watch **
+    **watch **
     This is so we can watch for changes in our files and automaticly updating them.
 
 ### gulp-concat - https://www.npmjs.com/package/gulp-concat
@@ -130,7 +130,14 @@ Then I will export the files by adding them to a exports.defult = series object,
 
 ### How to use
 
-To use these files yourshelfe 
+To use these files yourshelfe I recommend to use Visual studio code.
+Clone the repository with git clone https://github.com/JohnJohansson/DT173G-Uppgift-2.git in the terminal.
+Check if you have gulp installed with "gulp --version" If its not install it with "npm install gulp-cli -g"
+With gulp installed you can write "npm install" in the Terminal and it will automaticly downlode all the dependencies.
+
+To start gulp and run the code you just need to write "gulp" in the terminal, now all changes you do to the html files, the css files, js files and images will automaticly be sent to the pub map and minimized.
+
+You cant use the terminal while running the autmatic updater, to stop it hold down ctrl+C in the terminal.
 
 
 
