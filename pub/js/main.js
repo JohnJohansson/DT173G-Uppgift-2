@@ -1,0 +1,1 @@
+console.log("Hello gulp! From one.js"),console.log("Hello gulp from two.js");
