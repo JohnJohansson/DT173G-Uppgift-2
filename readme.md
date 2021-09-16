@@ -17,19 +17,19 @@ from a sourch map to a published map.
 
 Will be used for this assigment, the gulp functions I will use is "src, dest, parallel, series, watch"
 
-    **src **
+    **src**
     This is for deciding our source map.
     
-    **dest **
+    **dest**
     This is for deciding our published map.
 
-    **parallel **
+    **parallel**
     This is so our files can be written and handled at the same time from the src map to the pub map.
 
-    **series **
+    **series**
     This is for queue more then one commands.
 
-    **watch **
+    **watch**
     This is so we can watch for changes in our files and automaticly updating them.
 
 ### gulp-concat - https://www.npmjs.com/package/gulp-concat
