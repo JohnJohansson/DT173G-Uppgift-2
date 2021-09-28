@@ -21,6 +21,9 @@ const cssnano = require('gulp-cssnano');
 const imagemin = require('gulp-imagemin');
 // sökvägar 
 
+// Browser sync to update the browser automaticly kinda like live server
+const browserSync = require('browser-sync').create();
+
 // decided the sourch path and copies all * files with an ending of *.html, *.css and so on 
 const files = {
     htmlPath: "src/**/*.html",
@@ -69,9 +72,14 @@ function imageTask() {
 // Watch-task
 // A listener that detects updates on sourch files
 function watchTask() {
+    
+    // added a init for browser syncs live server
+    browserSync.init({
+        server: "./pub"
+    });
     // wich files to watch, since there are more then one we make an array
     //then we tell it what to do with them.
-    watch([files.htmlPath, files.cssPath, files.jsPath, files.imgPath], parallel(copyHTML, cssTask, jsTask, imageTask));
+    watch([files.htmlPath, files.cssPath, files.jsPath, files.imgPath], parallel(copyHTML, cssTask, jsTask, imageTask)).on('change', browserSync.reload);
 }
 
 // exports.default = copyHTML; this is for just one
