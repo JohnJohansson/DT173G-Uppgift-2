@@ -141,13 +141,12 @@ To start gulp and run the code you just need to write "gulp" in the terminal, no
 
 You cant use the terminal while running the autmatic updater, to stop it hold down ctrl+C in the terminal.
 
+**v1.1 - update**
 
+**Browser sync - https://browsersync.io/docs/gulp**
 
+In this udpate I have added Browsersync for gulp with the command "npm install browser-sync --save-dev"
 
+I added the var for browsersync, "const browserSync = require('browser-sync').create();" and then added
 
-
-
-
-
-
-
+a init to the watch task "browserSync.init({server: "./app"});" Then I added a ".on('change', browserSync.reload);" so when a file is changed automaticly relodes the browser.
